@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenAI" Version="1.7.2" />
+    <PackageReference Include="Polly" Version="8.0.0" />
+    <PackageReference Include="SharpToken" Version="1.2.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QA.Domain\QA.Domain.csproj" />
+    <ProjectReference Include="..\QA.Infrastruture\QA.Infrastruture.csproj" />
+    <ProjectReference Include="..\QA.Utils\QA.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
