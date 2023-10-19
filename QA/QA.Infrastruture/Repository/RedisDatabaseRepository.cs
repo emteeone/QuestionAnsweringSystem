@@ -19,8 +19,7 @@ namespace QA.Infrastruture.Repository
         private readonly IRedisPersistentConnection _persistentConnection;
         private readonly Lazy<IDatabase> _db;
 
-        public RedisDatabaseRepository( IConnectionMultiplexer connection,
-                                        ILogger<RedisDatabaseRepository> logger,
+        public RedisDatabaseRepository( ILogger<RedisDatabaseRepository> logger,
                                         IRedisPersistentConnection persistentConnection)
         {
             _logger = logger;
